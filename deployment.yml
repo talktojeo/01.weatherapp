@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: weather-app
-  namespace: test
+  namespace: my-app
 spec:
   replicas: 1
   selector:
@@ -26,3 +26,4 @@ spec:
             requests:
               cpu: "200m"
               memory: "512Mi"
+
